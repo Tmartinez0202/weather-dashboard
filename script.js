@@ -19,7 +19,7 @@ $(document).ready(function() {
     function searchWeather(cityName) {
         $.ajax({
             type: "GET",
-            url: "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=8665a048e7e7271136a54d23e66a244f&units=imperial",
+            url: "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=8665a048e7e7271136a54d23e66a244f&units=imperial",
             dataType: "JSON", 
             success: function(response){
                 //create history link for search
@@ -55,7 +55,7 @@ $(document).ready(function() {
     function getForecast(cityName) {
         $.ajax({
             type: "GET",
-            url: "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=8665a048e7e7271136a54d23e66a244f&units=imperial",
+            url: "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=8665a048e7e7271136a54d23e66a244f&units=imperial",
             dataType: "JSON", 
             success: function(response) {
                 console.log(response);
